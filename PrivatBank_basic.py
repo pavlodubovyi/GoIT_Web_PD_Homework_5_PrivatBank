@@ -78,8 +78,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     try:
-        response = asyncio.run(main(days))
-        print(response)
+        r = asyncio.run(main(days))
+        print(r)
     except HttpError as e:
         print(f"Error: {e}")
         sys.exit(1)
